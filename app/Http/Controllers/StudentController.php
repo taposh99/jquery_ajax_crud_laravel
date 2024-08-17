@@ -36,7 +36,12 @@ class StudentController extends Controller
         $item = Student::find($id);
         return response()->json($item);
     }
-
+    public function show($id)
+    {
+        $item = Student::find($id);
+        return response()->json($item);
+    }
+    
     public function update(Request $request, $id)
     {
         $item = Student::find($id);

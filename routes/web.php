@@ -21,3 +21,4 @@ Route::post('/store', [StudentController::class, 'store'])->name('store');
 Route::get('/edit/{id}', [StudentController::class, 'edit'])->name('edit');
 Route::post('/update/{id}', [StudentController::class, 'update'])->name('update');
 Route::delete('/delete/{id}', [StudentController::class, 'destroy'])->name('delete');
+Route::get('/show/{id}', [StudentController::class, 'show'])->name('show');
